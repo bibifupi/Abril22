@@ -1,0 +1,10 @@
+.inmueble-detalle {
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .inmueble-detalle img {
+    width: 100%;
+  }

@@ -1,0 +1,12 @@
+<div class="row blog-container">
+    @for (inmueble of inmuebles; track inmueble.id){
+    <div class="inmueble">
+      <img src="assets/imagenes/{{ inmueble.imagen }}" alt="{{ inmueble.titulo }}">
+      <h2>{{ inmueble.titulo }}</h2>
+      <p>{{ inmueble.descripcion }}</p>
+      <a [routerLink]="['/inmueble-detalle', inmueble.id]" >Ver detalles de {{inmueble.titulo}}</a>   
+
+    </div>
+}
+  </div>
+  

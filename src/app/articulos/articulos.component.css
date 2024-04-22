@@ -1,0 +1,23 @@
+.articulos {
+  width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  grid-row: inherit;
+}
+
+.articulos img {
+  width: 100%;
+}
+
+* {
+  background-color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+h2{
+  color: greenyellow;
+}
+p{
+  color: green;
+}

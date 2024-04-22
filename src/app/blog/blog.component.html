@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 bg-info text-center">
+      <h1>Blog de Ciberseguridad</h1>
+      <img src="assets/imagenes/hacker.png">
+    </div>
+  </div>
+
+    <div class="row blog-container">
+      @for (articulo of articulos; track articulo.id){
+      <div class="blog">
+        <img src="assets/imagenes/{{ articulo.imagen }}" alt="{{ articulo.titulo }}">
+        <h2>{{ articulo.titulo }}</h2>
+        <p>{{ articulo.descripcion }}</p>
+        <a [routerLink]="['/articulos', articulo.id]">Ver detalles de {{articulo.titulo}}</a>
+
+      </div>
+
+      }
+  </div>
